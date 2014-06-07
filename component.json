@@ -1,0 +1,28 @@
+{
+  "name": "noflo-seedrandom",
+  "description": "Seeded random number generator for JavaScript.",
+  "author": "Vilson Vieira <vilson@void.cc>",
+  "repo": "vilson/noflo-seedrandom",
+  "version": "0.1.0",
+  "keywords": [
+  ],
+  "remotes": [
+    "https://raw.githubusercontent.com"
+  ],
+  "dependencies": {
+    "noflo/noflo": "*",
+    "automata/seedrandom": "*"
+  },
+  "scripts": [
+    "components/SeedRandom.coffee",
+    "index.js"
+  ],
+  "json": [
+    "component.json"
+  ],
+  "noflo": {
+    "components": {
+      "SeedRandom": "components/SeedRandom.coffee"
+    }
+  }
+}
