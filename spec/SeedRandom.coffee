@@ -18,6 +18,6 @@ describe 'SeedRandom component', ->
 
   describe 'when instantiated', ->
     it 'should have an input port', ->
-      chai.expect(c.inPorts.in).to.be.an 'bang'
+      chai.expect(c.inPorts.in).to.be.an 'object'
     it 'should have an output port', ->
-      chai.expect(c.outPorts.out).to.be.an 'number'
+      chai.expect(c.outPorts.out).to.be.an 'object'
