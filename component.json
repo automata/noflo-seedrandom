@@ -14,7 +14,8 @@
     "automata/seedrandom": "*"
   },
   "scripts": [
-    "components/SeedRandom.coffee",
+    "components/RandomNumber.coffee",
+    "components/RandomArray.coffee",
     "index.js"
   ],
   "json": [
@@ -22,7 +23,8 @@
   ],
   "noflo": {
     "components": {
-      "SeedRandom": "components/SeedRandom.coffee"
+      "RandomNumber": "components/RandomNumber.coffee",
+      "RandomArray": "components/RandomArray.coffee"
     }
   }
 }

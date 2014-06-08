@@ -1,7 +1,7 @@
 noflo = require 'noflo'
 seedrandom = require 'seedrandom'
 
-class SeedRandom extends noflo.Component
+class RandomNumber extends noflo.Component
   description: 'Generates a random number using a given string as seed'
   icon: 'random'
   constructor: ->
@@ -23,4 +23,4 @@ class SeedRandom extends noflo.Component
         randomValue = @prng()
         @outPorts.out.send randomValue
         
-exports.getComponent = -> new SeedRandom
+exports.getComponent = -> new RandomNumber
