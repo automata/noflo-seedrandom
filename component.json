@@ -11,7 +11,7 @@
   ],
   "dependencies": {
     "noflo/noflo": "*",
-    "automata/seedrandom": "*"
+    "davidbau/seedrandom": "*"
   },
   "scripts": [
     "components/RandomNumber.coffee",

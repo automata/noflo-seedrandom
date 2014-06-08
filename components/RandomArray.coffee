@@ -28,7 +28,7 @@ class RandomArray extends noflo.Component
 
     @inPorts.seed.on 'data', (data) =>
       @seed = data
-      @compute()  
+      @compute()
 
     @inPorts.min.on 'data', (data) =>
       @min = data
