@@ -38,5 +38,11 @@
     "grunt-combine": "~0.8.3",
     "grunt-component": "~0.1.2"
   },
-  "keywords": []
+  "keywords": [],
+  "noflo": {
+    "components": {
+      "RandomNumber": "components/RandomNumber.coffee",
+      "RandomArray": "components/RandomArray.coffee"
+    }
+  }
 }
