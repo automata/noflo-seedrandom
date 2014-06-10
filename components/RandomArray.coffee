@@ -12,19 +12,14 @@ class RandomArray extends noflo.Component
     @seed = null
     @prng = seedrandom('')
 
-    @inPorts = new noflo.InPorts
-      seed:
-        datatype: 'string'
-      min:
-        datatype: 'number'
-      max:
-        datatype: 'number'
-      count:
-        datatype: 'int'
+    @inPorts =
+      seed: new noflo.Port 'string'
+      min: new noflo.Port 'number'
+      max: new noflo.Port 'number'
+      count: new noflo.Port 'int'
 
-    @outPorts = new noflo.OutPorts
-      numbers:
-        datatype: 'array'
+    @outPorts =
+      numbers: new noflo.Port 'array'
 
     @inPorts.seed.on 'data', (data) =>
       @seed = data
