@@ -2,7 +2,7 @@
   "name": "noflo-seedrandom",
   "description": "Seeded random number generator for JavaScript.",
   "author": "Vilson Vieira <vilson@void.cc>",
-  "repo": "vilson/noflo-seedrandom",
+  "repo": "automata/noflo-seedrandom",
   "version": "0.1.0",
   "keywords": [
   ],

@@ -10,17 +10,21 @@ class RandomNumber extends noflo.Component
 
     @inPorts =
       seed: new noflo.Port 'string'
-      in: new noflo.Port 'bang'
+      send: new noflo.Port 'bang'
     @outPorts =
-      out: new noflo.Port 'number'
+      number: new noflo.Port 'number'
 
     @inPorts.seed.on 'data', (data) =>
       if @seed isnt data
         @prng = seedrandom(data)
+      @compute()
 
-    @inPorts.in.on 'data', (data) =>
-      if @outPorts.out.isAttached()
-        randomValue = @prng()
-        @outPorts.out.send randomValue
+    @inPorts.send.on 'data', (data) =>
+      @compute()
+
+  compute: ->
+    return unless @outPorts.number.isAttached()
+    randomValue = @prng()
+    @outPorts.number.send randomValue
         
 exports.getComponent = -> new RandomNumber

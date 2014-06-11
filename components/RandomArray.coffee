@@ -4,7 +4,7 @@ seedrandom = require 'seedrandom'
 class RandomArray extends noflo.Component
   description: 'Generates an array of random numbers using a \
                 given string as seed.'
-  icon: 'folder-o'
+  icon: 'random'
   constructor: ->
     @min = null
     @max = null
